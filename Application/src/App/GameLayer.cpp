@@ -9,17 +9,22 @@ namespace Application
 	{
 		//on load
 		renderer = Renderer::Create();
+		model = new Model();
 	}
 
 	void GameLayer::OnDetach()
 	{
 		//on unload
 		delete renderer;
+		delete model;
 	}
 
 	void GameLayer::OnUpdate()
 	{
-		//game logic - update for every frame
+		//game logic - update for every frames
+		renderer->Clear();
+		renderer->DrawElements(model->GetVertexArray(), model->GetShaders());
+		//renderer->DrawArrays(model->GetVertexArray(), model->GetShaders());
 	}
 
 	void GameLayer::OnGuiRender()
@@ -45,6 +50,6 @@ namespace Application
 	bool GameLayer::OnWindowResize(WindowResizedEvent& e)
 	{
 		renderer->OnWindowResize(e.GetWidth(), e.GetHeight());
-		return true;
+		return false;
 	}
 }

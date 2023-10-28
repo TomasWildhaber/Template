@@ -1,4 +1,6 @@
 #pragma once
+#include "VertexArray.h"
+#include "Shader.h"
 
 namespace Application
 {
@@ -13,15 +15,15 @@ namespace Application
 			OpenGL,
 			Vulkan,
 			DirectX,
-			Mattel,
+			Metal,
 		};
 
 		static APIs API;
 		static Renderer* Create();
 
 		virtual void OnWindowResize(float width, float height) const = 0;
-		virtual void DrawArrays() const = 0;
-		virtual void DrawElements() const = 0;
+		virtual void DrawArrays(const VertexArray* vao, const Shader* shader) const = 0;
+		virtual void DrawElements(const VertexArray* vao, const Shader* shader) const = 0;
 		virtual void Clear() const = 0;
 	};
 }

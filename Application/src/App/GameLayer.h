@@ -2,6 +2,7 @@
 #include "Core/Layer.h"
 #include "Renderer/Renderer.h"
 #include "Event/WindowEvent.h"
+#include "Model.h"
 
 namespace Application
 {
@@ -17,5 +18,6 @@ namespace Application
 		bool OnWindowResize(WindowResizedEvent& e);
 
 		Renderer* renderer;
+		Model* model;
 	};
 }

@@ -8,14 +8,18 @@ namespace Application
 		glViewport(0, 0, width, height);
 	}
 
-	void OpenGLRenderer::DrawArrays() const
+	void OpenGLRenderer::DrawArrays(const VertexArray* vao, const Shader* shader) const
 	{
-
+		vao->Bind();
+		shader->Bind();
+		glDrawArrays(GL_TRIANGLES, 0, 6);
 	}
 
-	void OpenGLRenderer::DrawElements() const
+	void OpenGLRenderer::DrawElements(const VertexArray* vao, const Shader* shader) const
 	{
-
+		vao->Bind();
+		shader->Bind();
+		glDrawElements(GL_TRIANGLES, vao->GetIndexBuffer()->GetCount(), GL_UNSIGNED_INT, 0);
 	}
 
 	void OpenGLRenderer::Clear() const

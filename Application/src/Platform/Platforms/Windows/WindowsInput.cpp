@@ -6,23 +6,27 @@
 
 namespace Application
 {
+	//
+	// TODO: independent input system
+	//
+
 	bool Input::IsKeyPressed(int keyCode)
 	{
-		GLFWwindow* window = Application::Get().GetWindow().GetGLWindow();
+		GLFWwindow* window = (GLFWwindow*)Application::Get().GetWindow().GetNativeWindow();
 		int state = glfwGetKey(window, keyCode);
 		return state == GLFW_PRESS || state == GLFW_REPEAT;
 	}
 
 	bool Input::IsMouseButtonPressed(int button)
 	{
-		GLFWwindow* window = Application::Get().GetWindow().GetGLWindow();
+		GLFWwindow* window = (GLFWwindow*)Application::Get().GetWindow().GetNativeWindow();
 		int state = glfwGetMouseButton(window, button);
 		return state == GLFW_PRESS;
 	}
 
 	glm::vec2 Input::GetMousePosition()
 	{
-		GLFWwindow* window = Application::Get().GetWindow().GetGLWindow();
+		GLFWwindow* window = (GLFWwindow*)Application::Get().GetWindow().GetNativeWindow();
 		double x, y;
 		glfwGetCursorPos(window, &x, &y);
 		return { (float)x, (float)y };

@@ -75,7 +75,7 @@
     <ClInclude Include="src\App\GameLayer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\Renderer\VertexBuffer.h">
+    <ClInclude Include="src\Renderer\Buffer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\Renderer\VertexArray.h">
@@ -90,7 +90,16 @@
     <ClInclude Include="src\Renderer\FrameBuffer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="src\Platform\RenderAPIs\OpenGL\OpenGLVertexBuffer.h">
+    <ClInclude Include="src\Platform\RenderAPIs\OpenGL\OpenGLBuffer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\App\Model.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\RenderAPIs\OpenGL\OpenGLShader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\RenderAPIs\OpenGL\OpenGLVertexArray.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -146,7 +155,7 @@
     <ClCompile Include="src\App\GameLayer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\Renderer\VertexBuffer.cpp">
+    <ClCompile Include="src\Renderer\Buffer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\Renderer\VertexArray.cpp">
@@ -161,7 +170,13 @@
     <ClCompile Include="src\Renderer\FrameBuffer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\Platform\RenderAPIs\OpenGL\OpenGLVertexBuffer.cpp">
+    <ClCompile Include="src\Platform\RenderAPIs\OpenGL\OpenGLBuffer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\RenderAPIs\OpenGL\OpenGLShader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\RenderAPIs\OpenGL\OpenGLVertexArray.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

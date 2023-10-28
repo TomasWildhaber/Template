@@ -49,9 +49,8 @@ namespace Application
 
 	inline void const WindowsWindow::initGL()
 	{
-		if (!glfwInit()) {
+		if (!glfwInit())
 			Log("Failed to initialize glfw!");
-		}
 
 		glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 4);
 		glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 6);

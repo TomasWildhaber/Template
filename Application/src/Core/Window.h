@@ -17,7 +17,7 @@ namespace Application
 
 		virtual uint32_t GetWidth() const = 0;
 		virtual uint32_t GetHeight() const = 0;
-		virtual GLFWwindow* GetGLWindow() const = 0;
+		virtual void* GetNativeWindow() const = 0;
 
 		virtual void SetEventCallback(const EventCallbackFunction& callback) = 0;
 		virtual void SetVSync(bool Enabled) = 0;

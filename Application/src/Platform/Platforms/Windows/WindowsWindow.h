@@ -15,7 +15,7 @@ namespace Application
 
 		virtual inline uint32_t GetWidth() const override { return data.width; }
 		virtual inline uint32_t GetHeight() const override { return data.height; }
-		virtual inline GLFWwindow* GetGLWindow() const override { return window; }
+		virtual inline void* GetNativeWindow() const override { return window; }
 
 		virtual inline void OnUpdate() const override;
 		virtual inline void OnRender() const override;

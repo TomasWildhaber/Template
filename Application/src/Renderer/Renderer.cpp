@@ -26,8 +26,8 @@ namespace Application
 				Log("Vulkan is not supported yet!");
 				return nullptr;
 
-			case Renderer::APIs::Mattel:
-				Log("Mattel is not supported yet!");
+			case Renderer::APIs::Metal:
+				Log("Metal is not supported yet!");
 				return nullptr;
 
 			default:
