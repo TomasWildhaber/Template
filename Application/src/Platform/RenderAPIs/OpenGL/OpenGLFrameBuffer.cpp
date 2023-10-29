@@ -7,7 +7,7 @@ namespace Application
 	OpenGLFrameBuffer::OpenGLFrameBuffer(const float& _width, const float& _height, uint32_t _samples)
 	{
 		samples = _samples;
-		multisampled = multisampled > 1 ? true : false;
+		multisampled = samples > 1 ? true : false;
 		OpenGLFrameBuffer::Initialize(_width, _height, _samples);
 	}
 

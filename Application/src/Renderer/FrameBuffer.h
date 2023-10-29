@@ -23,7 +23,7 @@ namespace Application
 	protected:
 		virtual void Initialize(const float& _width, const float& _height, uint32_t _samples) = 0;
 
-		uint32_t id;
+		uint32_t id = 0;
 		uint32_t renderId;
 		uint32_t textureId;
 		uint32_t samples;
