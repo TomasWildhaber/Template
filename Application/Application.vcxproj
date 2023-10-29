@@ -11,6 +11,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Platform\RenderAPIs\OpenGL\OpenGLFrameBuffer.h" />
     <ClInclude Include="src\Debugging\OpenGLLogger.h" />
     <ClInclude Include="src\Platform\RenderAPIs\OpenGL\OpenGLVertexArray.h" />
     <ClInclude Include="src\Platform\RenderAPIs\OpenGL\OpenGLShader.h" />
@@ -49,6 +50,7 @@
     <ClCompile Include="Dependencies\imgui\imgui_impl_opengl3.cpp" />
     <ClCompile Include="Dependencies\imgui\imgui_tables.cpp" />
     <ClCompile Include="Dependencies\imgui\imgui_widgets.cpp" />
+    <ClCompile Include="src\Platform\RenderAPIs\OpenGL\OpenGLFrameBuffer.cpp" />
     <ClCompile Include="src\Platform\RenderAPIs\OpenGL\OpenGLVertexArray.cpp" />
     <ClCompile Include="src\Platform\RenderAPIs\OpenGL\OpenGLShader.cpp" />
     <ClCompile Include="src\Platform\RenderAPIs\OpenGL\OpenGLBuffer.cpp" />

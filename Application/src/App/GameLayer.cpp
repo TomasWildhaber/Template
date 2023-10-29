@@ -24,7 +24,6 @@ namespace Application
 		//game logic - update for every frames
 		renderer->Clear();
 		renderer->DrawElements(model->GetVertexArray(), model->GetShaders());
-		//renderer->DrawArrays(model->GetVertexArray(), model->GetShaders());
 	}
 
 	void GameLayer::OnGuiRender()
